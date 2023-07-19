@@ -8,4 +8,4 @@ following RESTful design principles
 writing database queries using Knex
 deploying the backend server to a cloud service
 
-![homepage screenshot](utils/home.png)
+![homepage screenshot](src/utils/home.png)
