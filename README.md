@@ -1,6 +1,6 @@
 This is the backend server for the WeLoveMovies frontend repo. Created using Node.js, Knex.js, and Express.js.
 
-Skills used: 
+Skills used:   
 installing middleware packages  
 receiving requests through routes  
 creating error handlers  
