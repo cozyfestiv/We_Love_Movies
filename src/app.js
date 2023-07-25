@@ -10,13 +10,17 @@ const theatersRouter = require('./theaters/theaters.router');
 const errorHandler = require('./errors/errorHandler');
 const notFound = require('./errors/notFound');
 const onServer = process.env.NODE_ENV === 'production';
+console.log(onServer);
+//debugging
 
 const app = express();
 app.use(
   cors({
     origin: onServer
       ? 'https://wlm-front-end-9lio.onrender.com/'
-      : 'http://localhost:3000/'
+      : //potentially not https
+        'http://localhost:3000/'
+    //don't necessarily need both as a worst case scenario
   })
 );
 app.use(express.json());
