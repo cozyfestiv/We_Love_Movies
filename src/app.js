@@ -14,15 +14,7 @@ console.log(onServer);
 //debugging
 
 const app = express();
-app.use(
-  cors({
-    origin: onServer
-      ? 'http://wlm-front-end-9lio.onrender.com/'
-      : //potentially not https
-        'http://localhost:3000/'
-    //don't necessarily need both as a worst case scenario
-  })
-);
+app.use(cors());
 app.use(express.json());
 
 app.use('/movies', moviesRouter);
