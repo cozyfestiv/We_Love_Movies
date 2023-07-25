@@ -17,7 +17,7 @@ const app = express();
 app.use(
   cors({
     origin: onServer
-      ? 'https://wlm-front-end-9lio.onrender.com/'
+      ? 'http://wlm-front-end-9lio.onrender.com/'
       : //potentially not https
         'http://localhost:3000/'
     //don't necessarily need both as a worst case scenario
