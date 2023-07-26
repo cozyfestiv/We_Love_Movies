@@ -1,7 +1,6 @@
 if (process.env.USER) require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
-//need to double check if I need to install anything to use cors, I don't think so?
 
 const moviesRouter = require('./movies/movies.router');
 const reviewsRouter = require('./reviews/reviews.router');
