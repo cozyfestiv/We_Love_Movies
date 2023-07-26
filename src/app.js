@@ -9,8 +9,6 @@ const theatersRouter = require('./theaters/theaters.router');
 const errorHandler = require('./errors/errorHandler');
 const notFound = require('./errors/notFound');
 const onServer = process.env.NODE_ENV === 'production';
-console.log(onServer);
-//debugging
 
 const app = express();
 app.use(cors());
